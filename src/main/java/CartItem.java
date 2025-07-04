@@ -36,11 +36,6 @@ public class CartItem implements ShippableItem {
         if(s==null)return 0;
         else return s.getWeightInGram()*quantity;
     }
-    public void returnTheItem(){
-        if(isSold)return;
-        item.setStock(item.getStock()+quantity);
-        quantity=0;
-    }
 
     @Override
     public String toString() {

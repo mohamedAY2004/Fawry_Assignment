@@ -20,7 +20,6 @@ public class Invoice {
     public void removeItem(Product p){
         for(CartItem i:cartItems){
             if(i.getProductName().equals(p.getName())) {
-                i.returnTheItem();
                 cartItems.remove(i);
                 return;
             }

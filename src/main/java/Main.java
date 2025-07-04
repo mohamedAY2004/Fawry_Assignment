@@ -11,7 +11,7 @@ public class Main {
                    .setName("Cheese")
                    .setPrice(6)
                    .setStock(8)
-                   .addTrait(new Expirable(LocalDate.of(2024,10,3)))
+                   .addTrait(new Expirable(LocalDate.of(2025,7,5)))
                    .addTrait(new Shippable(400))
                    .build();
            
@@ -19,7 +19,7 @@ public class Main {
                    .setName("Biscuit")
                    .setPrice(110)
                    .setStock(83)
-                   .addTrait(new Expirable(LocalDate.of(2025,7,4)))
+                   .addTrait(new Expirable(LocalDate.of(2024,7,4)))
                    .build();
            
            Product smartTV=builder
@@ -44,9 +44,12 @@ public class Main {
            
            Customer c=new Customer("Mohamed Younes",50000);
            Invoice i=new Invoice(c);
-           i.addItem(cheese,9);
+           i.addItem(cheese,8);
            i.addItem(biscuit,5);
            i.addItem(smartTV,1);
+           i.removeItem(cheese);
+           i.addItem(cheese,6);
+           i.addItem(Phone,1);
            i.addItem(mobileScratch,1);
            i.checkOut();
            

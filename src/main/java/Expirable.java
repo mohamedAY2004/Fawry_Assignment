@@ -12,7 +12,7 @@ public class Expirable implements Trait {
     }
 
     public boolean isExpired() {
-         return !expiryDate.isAfter(LocalDate.now());
+         return expiryDate.isBefore(LocalDate.now().minusDays(1));
     }
 
     @Override
