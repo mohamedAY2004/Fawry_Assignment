@@ -1,12 +1,9 @@
 import java.time.LocalDate;
-import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[]args){
        //The ProductBuilder is Reusable and clear values after each successful build
-
-        Scanner sc=new Scanner(System.in);
         ProductBuilder builder=new ProductBuilder();
 
        try {
