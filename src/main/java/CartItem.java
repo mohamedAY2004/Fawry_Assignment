@@ -24,10 +24,12 @@ public class CartItem implements ShippableItem {
         return false;
     }
     public int getQuantity(){return quantity;}
+    public void setQuantity(int quantity){if(!isSold) this.quantity=quantity;}
     public int getStock(){return item.getStock();}
     public double getPrice(){
         return item.getPrice()*quantity;
     }
+    public Product getProduct(){return item;}
     public String getProductName(){
         return item.getName();
     }

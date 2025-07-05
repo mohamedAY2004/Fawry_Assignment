@@ -11,6 +11,16 @@ public class Invoice {
     }
     public void addItem(Product p,int q){
         try{
+            for(CartItem i:cartItems){
+                if(i.getProduct().equals(p)) {
+                    if(i.getQuantity()+q<=i.getStock()) {
+                        i.setQuantity(i.getQuantity() + q);
+                    }else{
+                        System.out.printf("Couldn't add %s because of only %d in stock\n",p.getName(),i.getStock());
+                    }
+                        return;
+                }
+            }
             CartItem c=new CartItem(p,q);
             cartItems.add(c);
         }catch (IllegalArgumentException e){

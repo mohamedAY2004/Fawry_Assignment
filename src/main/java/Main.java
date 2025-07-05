@@ -49,6 +49,9 @@ public class Main {
            i.addItem(smartTV,1);
            i.removeItem(cheese);
            i.addItem(cheese,6);
+           i.addItem(cheese,1);
+           i.addItem(cheese,1);
+           i.addItem(cheese,1);
            i.addItem(Phone,1);
            i.addItem(mobileScratch,1);
            i.checkOut();
