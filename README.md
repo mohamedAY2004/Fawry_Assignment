@@ -1,3 +1,3 @@
 # Project Output
 
-![Main Output](MainOutput1.jpg) 
+![Main Output](image.png) 

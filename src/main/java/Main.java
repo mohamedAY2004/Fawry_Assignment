@@ -11,7 +11,7 @@ public class Main {
                    .setName("Cheese")
                    .setPrice(6)
                    .setStock(8)
-                   .addTrait(new Expirable(LocalDate.of(2025,7,6)))
+                   .addTrait(new Expirable(LocalDate.of(2025,8,6)))
                    .addTrait(new Shippable(400))
                    .build();
 
